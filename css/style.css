@@ -1,0 +1,176 @@
+*{
+    border: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: rgba(250, 190, 76, 1);;
+}
+body{
+    padding: 56px;
+}
+.penguin-logo{
+    width: 200px;
+}
+.head-section{
+    background-color:rgba(255, 251, 240, 1);
+}
+.penguin-navbar{
+    background-color: 0;
+}
+.icon-cart {
+    position: relative;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+}
+.icon-cart > span{
+    display: flex;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(160, 158, 77);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: -40%;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+
+}
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s;
+}
+
+body.showCart .cartTab
+{
+    inset: 0 0 0 auto;
+}
+
+body.showCart .container mt-5{
+    transform: translateX(-250px);
+}
+
+.cartTab > h1 {
+    padding: 20px;
+    margin: 0;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.cartTab .Btns {
+    display: grid;
+    height: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .cartTotal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.totalPrice {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.cartTab .Btns > button {
+    background-color: #E8BC0E;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .Btns .close {
+    background-color: #eee;
+}
+
+.cartTab .listCart .item img{
+    width: 100%;
+}
+
+.cartTab .listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+
+.listCart {
+    overflow: auto;
+    margin-top: 2rem;
+}
+
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+#text-style{
+    color: rgba(250, 190, 76, 1);
+    font-size: 80px;
+}
+.text-style2{
+    font-size: 80px;
+}
+.penguin-catagory, .text-style2{
+    color: rgba(54, 57, 88, 1);
+}
+.penguin-card-img{
+    padding: 5%;
+    background-color: rgba(241, 241, 241, 1);
+    margin: 4% auto; 
+}
+.penguin-info{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+.penguin-card-border, .penguin-card-img{
+    border-radius: 1em;
+}
+.price-text-style{
+    color: rgba(250, 190, 76, 1);
+    font-weight: bold;
+}
+.penguin-card-footer, .penguin-card-border{
+    background-color: white;
+    border: 0;
+}
+.penguin-btn{
+    background-color: rgba(164, 188, 70, 1);
+    color: white;
+}
+.footer-section{
+    background-color: hsla(72, 47%, 51%, 0.486);
+    padding: 3% 1% 1% 1%;
+}
